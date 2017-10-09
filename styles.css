@@ -1,0 +1,280 @@
+﻿/*START*/
+/* Settings for all pages */
+body {
+  margin: 2em 6em;
+  font-family: 'Press Start 2P', cursive;
+  background: url("media/images/essential/terminalbackground.jpg");
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-attachment: fixed
+}
+/*END*/
+
+/*START*/
+/* Makes bar green and compatible with all browsers */
+hr.green {
+	color: #1db05b;
+	border-color: #1db05b;
+	background-color: #1db05b;
+	border-width: 1px;
+	border-color: #1db05b;
+}
+/*END*/
+
+/*START*/
+/* Turns all titles and paragraphs green and to the same hight */
+h1.green, h2.green, h3.green, h4.green, h5.green, h6.green, footer.green {
+	height: 10px;
+	color: #1db05b;
+}
+/*END*/
+
+/*START*/
+/* Settings for p tag */
+p.green {
+	padding-top: 5px;
+	font-size: 85%;
+	color: #1db05b;
+	line-height: 150%;
+}
+/*END*/
+
+/*START*/
+/* Creates info box */
+td.green, tr.green{
+	color: #1db05b; 
+}
+table.green{
+	width: 200px;
+	margin-top: 200px;
+	border: 1px solid #1db05b; 
+	float: right; 
+}
+/*END*/
+
+/*START*/
+/* Removes link highlight colour */
+a { 
+	color: inherit; 
+} 
+/*END*/
+
+/*START*/
+/* Creates expanding text options */
+div.green {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	color: #1db05b;
+}
+li.green {
+	padding-left: 1em;
+	text-indent: -1em;
+	line-height: 2em;
+}
+li.green:before {
+	content: ">";
+	padding-right: 5px;
+
+}
+/*END*/
+
+/*START*/
+/* Creates green boxes to jump to other pages on the website */
+div.img {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #1db05b;
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: center;
+	font-weight: normal;
+	width: 120px;
+	margin: 5px;
+	color: #1db05b;  
+}	
+div.img img {
+	display: inline;
+	margin: 5px;
+	border: 1px solid #1db05b;
+}
+div.img a:hover img {
+	border: 1px solid #1db05b;
+}
+div.img:hover{
+	color: black;
+	background-color: #1db05b;
+	border: 1px solid black;
+}
+/*END*/
+
+/*START*/
+/*Creates Image enlarging uppon hovering*/
+ul.enlarge{
+	list-style-type:none; /*remove the bullet point*/
+	margin-left:0;
+}
+ul.enlarge li{
+	display:inline-block; /*places the images in a line*/
+	position: relative;
+	z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+	margin:10px 40px 0 20px;
+}
+ul.enlarge img{
+	background-color:#1db05b;
+	padding: 6px;
+	border-radius: 4px;
+}
+ul.enlarge span{
+	position:absolute;
+	left: -9999px;
+	background-color:#1db05b;
+	padding: 10px;
+	font-size:.9em;
+	text-align: center; 
+	color: #495a62; 
+	border-radius:8px;
+}
+ul.enlarge li:hover{
+	z-index: 50;
+	cursor:pointer;
+}
+ul.enlarge span img{
+	padding:2px;
+	background:#ccc;
+}
+ul.enlarge li:hover span{ 
+	top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+	left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+ul.enlarge li:hover:nth-child(2) span{
+	left: -100px; 
+}
+ul.enlarge li:hover:nth-child(3) span{
+	left: -200px; 
+}
+/*IE Hacks - see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version*/
+/*END*/
+
+/*START*/
+/*Settings for the expanding text box*/
+a.infoexpand {
+	font-size: 100%;
+	margin-top:200px;
+	margin-bottom:200px;
+	color: #1db05b;
+}
+p.infoexpandtext {
+	font-size: 100%;
+	margin-top: 10px;
+	color: #1db05b;
+}
+/*END*/
+
+
+/*START*/
+.toggle-box {
+	display: none;
+}
+.toggle-box + label {
+	display: block;
+}
+.toggle-box + label + div {
+	display: none;
+}
+.toggle-box:checked + label + div {
+	display: block;
+}
+/*END*/
+
+/*START*/
+/* Settings for fake advertisement */
+div.adver {
+	width: 100%;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/*END*/
+
+/*START*/
+/* Settings for game info box */
+h1.box {
+	font-size: 100%;
+	color: #1db05b;
+}
+h2.box {
+	font-size: 85%;
+	color: #1db05b;
+}
+p.box {
+	font-size: 65%;
+	color: #1db05b;
+}
+/*END*/
+
+/*START*/
+/* Settings for game info box */
+iframe.framefix {
+	border: none;
+}
+/*END*/
+
+
+/*START*/
+/* Creates expanding text options */
+label.green {
+	padding-left: 1em;
+	text-indent: -1em;
+	line-height: 2em;
+}
+
+label.green:before {
+	content: ">";
+	padding-right: 5px;
+
+}
+/*END*/
+
+/*START*/
+/* Hovering over lists creates a green bar and changes green text to black */
+label.green:hover {
+	color: black;
+	background-color: #1db05b;
+	line-height: 2em;
+	
+}
+/*END*/
+
+/*START*/
+/* settings for info box */
+span.green {
+	padding-top: 5px;
+	font-size: 85%;
+	color: #1db05b;
+	line-height: 150%;
+}
+/*END*/
+
+/*START*/
+/* settings for videos*/
+iframe.video {
+	border: 0px;
+	overflow:hidden;
+	width: 420px;
+	height: 315px;
+}
+/*END*/
+
+
+/*START*/
+/* settings for music player */
+iframe.music {
+	border: 0px;
+	overflow:hidden;
+	width: 950px;
+	height: 350px;
+}
+/*END*/
